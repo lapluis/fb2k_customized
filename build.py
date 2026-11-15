@@ -27,7 +27,7 @@ COMPONENTS = ['foo_cuesheet_creator', 'foo_dr_meter', 'foo_dsd_processor',
 CORE_COMPONENTS = ['foo_converter.dll', 'foo_dsp_eq.dll', 'foo_dsp_std.dll',
                    'foo_fileops.dll', 'foo_freedb2.dll', 'foo_input_std.dll',
                    'foo_ui_std.dll', 'foo_unpack.dll']
-PRESETS = ['aac_ent', 'alac_d.nn', 'flac_d.nn', 'flac_ent', 'flac_sep', 'wv_sep']
+PRESETS = ['aac_image', 'alac_multidisc', 'flac_multidisc', 'flac_image', 'flac_tracks', 'wv_tracks']
 APP_FILES = ['CoreAudioToolbox.dll', 'CoreFoundation.dll', 'ASL.dll',
              'libdispatch.dll', 'objc.dll', 'libicuin.dll', 'libicuuc.dll']
 
@@ -356,7 +356,7 @@ def validate_layout(stage, target, output, output_mode=None):
                 raise ValueError('Wrong output mode in '+name)
             if output_mode == 'ask' and values.get('outputFolderLastUsed') != str(output):
                 raise ValueError('Wrong last used output folder in '+name)
-    aac = dict(line.split('=',1) for line in (stage/'profile/converter presets/aac_ent.ini').read_text(encoding='utf-8-sig').splitlines() if '=' in line)
+    aac = dict(line.split('=',1) for line in (stage/'profile/converter presets/aac_image.ini').read_text(encoding='utf-8-sig').splitlines() if '=' in line)
     blob = base64.b64decode(aac['encodingParams'])
     if QAAC_ENCODER.encode('utf-8') not in blob:
         raise ValueError('AAC path not adapted')

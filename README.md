@@ -26,7 +26,7 @@ qaac 默认来源为 `C:\Tools\OKEGui\tools\qaac`。此目录必须存在，包�
 .\Build-Foobar2000.ps1 -TargetDirectory 'D:\Audio Tools\fb2k' -OutputDirectory 'D:\Audio Output'
 ```
 
-六个自定义预设（`alac_d.nn`、`flac_d.nn`、`flac_ent`、`flac_sep`、`aac_ent`、`wv_sep`）默认均直接输出到指定目录，等同于 `-OutputMode Fixed`。构建时可统一切换为转换时询问目录：
+六个自定义预设（`alac_multidisc`、`flac_multidisc`、`flac_image`、`flac_tracks`、`aac_image`、`wv_tracks`）默认均直接输出到指定目录，等同于 `-OutputMode Fixed`。构建时可统一切换为转换时询问目录：
 
 ```powershell
 .\Build-Foobar2000.ps1 -TargetDirectory '.\artifact-ask\foobar2000' -OutputDirectory 'D:\Audio Output' -OutputMode Ask
@@ -58,7 +58,7 @@ AAC 自定义编码器固定使用 `./encoders/qaac/qaac64.exe`。该写法已�
 - DSD Processor 从 SACD 1.5.11 的配套包提取；单独的 1.3.2 发行包与参考目录的 DLL 不同，不能混用。
 - `Depth`、`Sampling rate`、`Album with Dep&SR`、原主题和组件格式规则。
 - 六个自定义转码预设及默认预设，保留文件名模板、标签/封面传递、ReplayGain、解码后处理等设置。
-- AAC 的 `-i -q 2 -v 192 --no-delay -o %d -` 参数不变，使用 `./encoders/qaac/qaac64.exe`。转换器的自定义格式列表与 aac_ent 预设均使用这个相对路径。
+- AAC 的 `-i -q 2 -v 192 --no-delay -o %d -` 参数不变，使用 `./encoders/qaac/qaac64.exe`。转换器的自定义格式列表与 aac_image 预设均使用这个相对路径。
 - OKE qaac 文件夹完整复制，保留其 Apple、soxr、convolver、FLAC 和运行库。原有编码器包文件及 `encoders\QTfiles64` 保留，其他格式的编码器布局不变。
 - 六个自定义预设默认直接使用指定输出目录；可用 `-OutputMode Ask` 统一改为每次询问，并初始化上次使用目录。其他转换设置保持不变。
 - 在应用根目录附带实际的 FFmpeg 9.0.1 工具。插件自动识别应用目录中的 ffmpeg/ffprobe，不依赖本机 `C:\local\bin` 启动器或全局 PATH，也无需改写组件自带校验的二进制配置。
