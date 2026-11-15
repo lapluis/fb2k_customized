@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "reference_directory": "C:\\Tools\\VCB-S_CollationTools\\foobar2000",
+  "sources": [
+    {
+      "id": "core",
+      "version": "2.26.2",
+      "url": "https://www.foobar2000.org/files/foobar2000-x64_v2.26.2.exe",
+      "file": "core.exe",
+      "bytes": 7954936,
+      "sha256": "ffa739f87d9c374cb030426a2ab4bfb37959d0dbb892fdc742654c14d127f795"
+    },
+    {
+      "id": "encoders",
+      "version": "2026-03-13",
+      "url": "https://www.foobar2000.org/downloads/Free_Encoder_Pack-2026-03-13.exe",
+      "file": "encoders.exe",
+      "bytes": 5627168,
+      "sha256": "2510d5706889c19ebf6e26d400b18c3b0962b1289b55bfbbea52fcefb6768627"
+    },
+    {
+      "id": "foo_cuesheet_creator",
+      "version": "0.4.6d",
+      "url": "https://foobar.hyv.fi/foo_cuesheet_creator.fb2k-component",
+      "file": "foo_cuesheet_creator.fb2k-component",
+      "bytes": 74435,
+      "sha256": "e6a4fb0fb1ba31be335f8c84fd97facec6cd5c4002d0baf45aab0da11f22813a"
+    },
+    {
+      "id": "foo_dr_meter",
+      "version": "1.0.8",
+      "url": "https://www.foobar2000.org/getcomponent/b32ddc41ed85f2ab75481f4a74bd876f/foo_dr_meter.fb2k-component",
+      "file": "foo_dr_meter.fb2k-component",
+      "bytes": 356313,
+      "sha256": "6dde22df1e3fcae256cd59ab39fd98adf3d840ebc3053fe4a2f7cced2998ade6"
+    },
+    {
+      "id": "foo_input_ffmpeg",
+      "version": "0.9.2",
+      "url": "https://www.foobar2000.org/getcomponent/841e31a815bda7cc8bb70b580677596c/foo_input_ffmpeg.fb2k-component",
+      "file": "foo_input_ffmpeg.fb2k-component",
+      "bytes": 402344,
+      "sha256": "45ed843d9c020661d53fabfd52650bbe622b085c85b4a9a04fe594c53c1869d2"
+    },
+    {
+      "id": "foo_input_tak",
+      "version": "0.5.9",
+      "url": "https://www.foobar2000.org/getcomponent/80e4d63019a74f31c7d65baec0e604c7/foo_input_tak.fb2k-component",
+      "file": "foo_input_tak.fb2k-component",
+      "bytes": 326616,
+      "sha256": "13c0f0a38196f60169f83a9dd34d8176812c4024e24c41b152a34ef2d52184c1"
+    },
+    {
+      "id": "foo_input_tta",
+      "version": "4.0.5",
+      "url": "https://www.foobar2000.org/getcomponent/5ec687ae6ffa9c6d8bb33aa9ca5549ae/foo_input_tta.fb2k-component",
+      "file": "foo_input_tta.fb2k-component",
+      "bytes": 184657,
+      "sha256": "014b3db4430b20264652e58c7394194868b6f240d21a2c3ca2c9c294b9a90c84"
+    },
+    {
+      "id": "foo_input_sacd",
+      "version": "1.5.11",
+      "url": "https://downloads.sourceforge.net/project/sacddecoder/foo_input_sacd/foo_input_sacd-1.5.11.zip",
+      "file": "foo_input_sacd.zip",
+      "bytes": 9489683,
+      "sha256": "20bfc6eb36d96f9548a72ee31896506629aecdf9e0dc55df0a958f8b770940f3",
+      "fallback_urls": [
+        "https://master.dl.sourceforge.net/project/sacddecoder/foo_input_sacd/foo_input_sacd-1.5.11.zip"
+      ]
+    },
+    {
+      "id": "foo_input_dvda",
+      "version": "0.8.1",
+      "url": "https://downloads.sourceforge.net/project/dvdadecoder/foo_input_dvda/foo_input_dvda-0.8.1.zip",
+      "file": "foo_input_dvda.zip",
+      "bytes": 2029403,
+      "sha256": "13c37b9f5ec2fc3e2d49b8526ec25228e7644974cbc84a2a4d286ab08042cce4",
+      "fallback_urls": [
+        "https://master.dl.sourceforge.net/project/dvdadecoder/foo_input_dvda/foo_input_dvda-0.8.1.zip"
+      ]
+    },
+    {
+      "id": "apple",
+      "version": "2026-10-26",
+      "url": "https://secure-appldnld.apple.com/itunes12/142-28289-20261026-6acff6c8-72eb-4045-84eb-fd35239ac645/iTunes64Setup.exe",
+      "file": "itunes.exe",
+      "bytes": 202558432,
+      "sha256": "221a24203f6182b7dc0e18055b1e9338a0c3c992c7fefe6b3be0460caf29db4d"
+    },
+    {
+      "id": "ffmpeg",
+      "version": "9.0.1",
+      "url": "https://github.com/GyanD/codexffmpeg/releases/download/9.0.1/ffmpeg-9.0.1-full_build.7z",
+      "file": "ffmpeg.7z",
+      "bytes": 165742351,
+      "sha256": "4b9c814cb07a1f90d05b768ef4eb2abbf89af94bbb924df5b7dbd6e64e1e2b96"
+    }
+  ],
+  "component_notes": {
+    "foo_dsd_processor": "Extracted from foo_input_sacd-1.5.11.zip; same DLL as reference installation."
+  }
+}

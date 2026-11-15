@@ -1,0 +1,15 @@
+{
+  "config.json": "0d5297b0339eec631c4bb320ca39e38cf875e5dd69cc5b415141e0cd3d002a1e",
+  "files/LargeFieldsConfig-v2.txt": "27ab0c611a7a6195e7824020013a123d18ba576310a7b2844d27ab0203999f5a",
+  "files/theme.fth": "1378fd6edc3583cc3fe0e472876f61760dec18051fb343734e985beea47c84a8",
+  "presets/aac_ent.ini": "c9fe4e6eac3d02aa2aaa76987779b23e16876d9a09c432560732cb9a0c692747",
+  "presets/alac_d.nn.ini": "62025c3adcb07b0087e56dae2be8b802ff69a83083b3a4cb3d0a39db664d0c88",
+  "presets/flac_d.nn.ini": "0db4929da5be75d2bb59c7d32bcc72e680e92cf7db7683ccd213fcef90500ed4",
+  "presets/flac_ent.ini": "7c58a1dadfe82ae910a3a4c0d1be5d14eafa8b527b73fd17e7dde3fa0d4d9a9b",
+  "presets/flac_sep.ini": "599a7fd281cb8f2c0de6aa6b2565de92885ca6c92acd39da95b1ac26478dd6da",
+  "presets/wv_sep.ini": "c807926e5461d51b4ac13ca869a228a2ea348cf3359a46f70d5dabf25e5341f1",
+  "presets/[default].ini": "1162a40ee05dd97c8ebb52ff761304c5f4a1589eab460dcfa341f634d468a995",
+  "files/configuration/foo_input_dvda.dll.cfg": "fae8bdde3770170ea067dd27ff791d36bffc073ab029c3246f07a9caf6241211",
+  "files/configuration/foo_input_ffmpeg.dll.cfg": "de0802649e4528c6a7e0e02d594553d52641629995c7588ff3395fdf4deba000",
+  "files/configuration/foo_input_sacd.dll.cfg": "56dd9dee9b102016500fd3da95c965ecb42cbdff5fa465ca4dd9360d91a4d888"
+}

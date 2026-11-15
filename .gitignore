@@ -1,0 +1,34 @@
+# Generated players (artifact/, artifact-test/, artifact-new/, artifact-ask/, ...)
+/artifact*/
+/converted/
+
+# Download caches, extraction stages, tests, reports and backups
+/cache/
+/work/
+/.fb2k-build-*/
+*.partial
+*.log
+
+# Python local state
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Windows metadata
+Thumbs.db
+Desktop.ini
